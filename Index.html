@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
@@ -10,26 +9,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <section class="hero">
+    <nav class="navbar py-4 navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active align-self-center">
+                        <a class="nav-link" href="#">Product</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <a class="btn px-4 btn-secondary " href="#" role="button">Sign in</a>
+                    <a class="btn px-4 btn-primary " href="#" role="button">Sign Up</a>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      
+    <section class="hero mt-5">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 class="mb-4">
+                <div class="col align-self-center">
+                    <h1 class="hero mb-4">
                         The Design Thinking Superpowers
                     </h1>
                     <p class="mb-4">
                         Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
                     </p>
                     <a class="btn btn-primary mt-4" href="#" role="button">Get Started</a>
+                    <a class="btn btn-lg px-4 btn-secondary mt-4" href="#" role="button">
+                        <img src="images/Play Button.svg" alt=""> Watch Video
+                    </a>
                 </div>
-                <div class="col">
+                <div class="col d-none d-sm-block mb-5">
                     <img width="700" src="images/Hero Illustration.svg" alt="">
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <script type ="text/javascript" src="js/bootstrap.js"></script>
